@@ -11,7 +11,7 @@ class Shift(models.Model):
     month= models.CharField(max_length=50)
     from_day= models.IntegerField( default=0)
     to_day= models.IntegerField(default=0)
-    user= models.CharField(max_length=50)
+    user= models.CharField(max_length=50,default="Taha")
     added_by= models.CharField( max_length=50,default="Taha")
     eddited_by= models.CharField( max_length=50,default="None")
     def __str__ (self):
